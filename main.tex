@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hitesh Sethi} \\ \vspace{1pt}
+    \small +91 8920916103 $|$ \href{mailto:aaroecode@gmail.com}{\underline{hitesh.sethi@outlook.in}} $|$ 
+    \href{https://www.linkedin.com/in/hiteshkrsethi/}{\underline{https://linkedin.com/in/hiteshkrsethi}} $|$
+    \href{https://github.com/aaroecode}{\underline{https://github.com/aaroecode}} $|$
+    \href{https://aaroegun.online/}{\underline{https://aaroegun.online/}}
+\end{center}
+
+%-----------SUMMARY-------------
+\section{Summary}
+    {Backend Engineer experienced in building scalable APIs, automation systems, and NLP/data-processing pipelines using Python, FastAPI, Docker, and cloud infrastructure. Built production backend workflows including large-scale call-analysis pipelines processing 285M+ records.}
+    
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ Python, SQL} \\
+     \textbf{Backend \& APIs:}{ FastAPI, Flask, REST APIs, Webhooks, Authentication} \\
+     \textbf{DevOps \& Cloud:}{ Docker, Linux, Nginx, GitHub Actions (CI/CD), GCP, DigitalOcean} \\
+     \textbf{Databases:}{ PostgreSQL, Elasticsearch} \\
+     \textbf{Data \& AI:}{ NLP, ETL Pipelines, Hugging Face, Transformers, LLM APIs, LangChain} \\
+     \textbf{Tools:}{ Git, Postman, Systemd} \\
+    }}
+  \end{itemize}
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+        
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Python Backend Developer}{11/2024 - 01/2025}
+      {Namdisoft}{Gurugram}
+      \resumeItemListStart
+        \resumeItem{Developed and launched CivicLink, a WhatsApp-based civic reporting platform using FastAPI, Docker, and WhatsApp Cloud APIs}
+        \resumeItem{Integrated AI-based image processing and Elasticsearch to enable real-time issue reporting and analytics workflows}
+        \resumeItem{Devised production-ready backend systems with API security, logging, and automation workflows, reducing the manual reporting effort by 60\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend \& AI Engineer (Freelance Contract) }{06/2024 - 11/2024}
+      {Hilton Grand Vacations}{Remote}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained production-grade backend systems and scalable APIs using Python, FastAPI, Flask, Docker, and Linux-based cloud infrastructure}
+        \resumeItem{Innovated NLP and ETL pipelines processing 285M+ call records from AWS S3 for large-scale call analysis workflows}
+        \resumeItem{Implemented tokenization and data-filtering pipelines reducing dataset size by 28\% by removing low-signal and corrupted records}
+        \resumeItem{Optimized ETL and annotation workflows, reducing manual service-desk effort by 40\% and contributing to improved rejection rates from 50\% to 30\%}
+      \resumeItemListEnd
+      
+
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Minecraft Server Infrastructure} $|$ \emph{Python, Docker, Linux, DevOps}}{}
+          \resumeItemListStart
+            \resumeItem{Architected and managed Dockerized game server infrastructure with 99\%+ uptime over 2 years}
+            \resumeItem{Optimized server performance and infrastructure reliability for 20+ concurrent players through monitoring, networking, and resource tuning}
+            \resumeItem{Led a team of 12 contributors managing deployments, server configuration, and infrastructure improvements}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{QR-Based Ticketing System} $|$ \emph{Python, FastAPI, Docker, Linux}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented an automated QR-based ticketing and bulk email distribution system using FastAPI and Docker}
+            \resumeItem{Engineered bulk email delivery workflows capable of sending 200+ emails per execution with automated ticket generation}
+            \resumeItem{Managed self-hosted mail server and backend infrastructure with 0 downtime over 6 months of continuous operation}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Noida International University}{Greater Noida}
+      {B.Tech in Computer Science}{07/2022 – 05/2026}
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-------------------------------------------
+\end{document}
